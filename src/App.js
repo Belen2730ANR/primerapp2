@@ -3,23 +3,27 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <form action='' className="App">
+      <header className='App-header'>
+      <h1 className='Elementos'>MI PRIMER APP</h1>
+      <img src={"android_logo.png"} alt="caut" className='App-imagen'/>
+      <br></br>
+      <fieldset className='App-header2'>
+        <legend>Nombre:</legend>
+        <input name="Nombre" placeholder='Ingresa tus datos'></input>
+      </fieldset>
+      <br></br>
+      <fieldset className='App-header2'>
+        <legend>Contraseña:</legend>
+        <input name="Contraseña" placeholder='Ingresa tus datos' type={"password"}></input>
+      </fieldset>
+      <br></br>
+      <label className='checkbox'>Acepta terminos y condiciones <input type={"checkbox"}></input></label>
+      <br></br>
+      <input type={"submit"} className="boton"></input>
+      <br></br>
       </header>
-    </div>
+    </form>
   );
 }
-
 export default App;
